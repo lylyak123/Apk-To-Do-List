@@ -1,0 +1,114 @@
+ /* ===== TAMPILAN UMUM ===== */
+body { 
+  background-color: #babad1; /* krem lembut */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Tengah vertikal */
+  align-items: center;     /* Tengah horizontal */
+  text-align: center;
+}
+
+/* ===== JUDUL ===== */
+h1 {
+  color: #e6f7f4;
+  margin-bottom: 25px;
+}
+
+/* ===== FORM INPUT ===== */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* ===== TOMBOL TAMBAH ===== */
+button {
+  padding: 10px 15px;
+  background-color: #576cc7;  
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover { 
+  background-color: #93b9be; 
+}
+
+/* ===== DAFTAR TUGAS ===== */
+ul#taskList {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ===== ITEM TUGAS ===== */
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-left: 5px solid #ddc1e2;
+  border-radius: 6px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ===== GRUP TOMBOL EDIT / HAPUS ===== */
+li .button-group {
+  display: flex;
+  gap: 8px;
+}
+
+li button {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+li button:first-of-type {
+  background-color: #94c1eb; 
+  color: #000;
+}
+
+li button:hover { 
+  background-color: #3c62df; 
+}
+
+li button:last-of-type {
+  background-color: #f46c6c; 
+  color: #fff;
+}
+
+li button:hover {
+  opacity: 0.8;
+}
+
+/* ===== TANGGAL TUGAS ===== */
+.task-date {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+  font-style: italic;
+}
